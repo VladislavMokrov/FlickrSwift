@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		728CA0722624964C005CD81B /* TagsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728CA0712624964C005CD81B /* TagsModel.swift */; };
 		7292F829262379FD00E4CE24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292F828262379FD00E4CE24 /* AppDelegate.swift */; };
 		7292F82B262379FD00E4CE24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292F82A262379FD00E4CE24 /* SceneDelegate.swift */; };
 		7292F82D262379FD00E4CE24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292F82C262379FD00E4CE24 /* ViewController.swift */; };
 		7292F830262379FD00E4CE24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7292F82E262379FD00E4CE24 /* Main.storyboard */; };
 		7292F832262379FE00E4CE24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7292F831262379FE00E4CE24 /* Assets.xcassets */; };
 		7292F835262379FE00E4CE24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7292F833262379FE00E4CE24 /* LaunchScreen.storyboard */; };
+		7292F8402623935B00E4CE24 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7292F83F2623935B00E4CE24 /* TableViewCell.swift */; };
+		72B4B4082627208D00DB956E /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B4072627208D00DB956E /* PhotosCollectionViewController.swift */; };
+		72B4B40C262727A900DB956E /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4B40B262727A900DB956E /* PhotoCollectionViewCell.swift */; };
+		72DDF8BF2628549600D531D8 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DDF8BE2628549600D531D8 /* PhotoViewController.swift */; };
+		72DDF8C32628918400D531D8 /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DDF8C22628918400D531D8 /* PhotosModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		728CA0712624964C005CD81B /* TagsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsModel.swift; sourceTree = "<group>"; };
 		7292F825262379FD00E4CE24 /* FlickrSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7292F828262379FD00E4CE24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7292F82A262379FD00E4CE24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,11 @@
 		7292F831262379FE00E4CE24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7292F834262379FE00E4CE24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7292F836262379FE00E4CE24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7292F83F2623935B00E4CE24 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		72B4B4072627208D00DB956E /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		72B4B40B262727A900DB956E /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		72DDF8BE2628549600D531D8 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		72DDF8C22628918400D531D8 /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +71,12 @@
 				7292F828262379FD00E4CE24 /* AppDelegate.swift */,
 				7292F82A262379FD00E4CE24 /* SceneDelegate.swift */,
 				7292F82C262379FD00E4CE24 /* ViewController.swift */,
+				7292F83F2623935B00E4CE24 /* TableViewCell.swift */,
+				728CA0712624964C005CD81B /* TagsModel.swift */,
+				72B4B4072627208D00DB956E /* PhotosCollectionViewController.swift */,
+				72B4B40B262727A900DB956E /* PhotoCollectionViewCell.swift */,
+				72DDF8C22628918400D531D8 /* PhotosModel.swift */,
+				72DDF8BE2628549600D531D8 /* PhotoViewController.swift */,
 				7292F82E262379FD00E4CE24 /* Main.storyboard */,
 				7292F831262379FE00E4CE24 /* Assets.xcassets */,
 				7292F833262379FE00E4CE24 /* LaunchScreen.storyboard */,
@@ -138,7 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7292F82D262379FD00E4CE24 /* ViewController.swift in Sources */,
+				7292F8402623935B00E4CE24 /* TableViewCell.swift in Sources */,
+				72DDF8C32628918400D531D8 /* PhotosModel.swift in Sources */,
 				7292F829262379FD00E4CE24 /* AppDelegate.swift in Sources */,
+				72B4B4082627208D00DB956E /* PhotosCollectionViewController.swift in Sources */,
+				72B4B40C262727A900DB956E /* PhotoCollectionViewCell.swift in Sources */,
+				72DDF8BF2628549600D531D8 /* PhotoViewController.swift in Sources */,
+				728CA0722624964C005CD81B /* TagsModel.swift in Sources */,
 				7292F82B262379FD00E4CE24 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPMY542F34;
 				INFOPLIST_FILE = FlickrSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPMY542F34;
 				INFOPLIST_FILE = FlickrSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
