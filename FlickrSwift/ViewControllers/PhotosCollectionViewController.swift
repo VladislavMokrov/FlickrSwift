@@ -66,20 +66,7 @@ class PhotosCollectionViewController: UIViewController, UICollectionViewDelegate
     func convert(farm: Int, server: String, id:String, secret: String) -> URL? {
         return URL(string:"https://farm\(farm).staticflickr.com/\(server)/\(id)_\(secret)_c.jpg")
     }
-
     
-    // MARK: - Navigation
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "pickPhotoSegue" {
-            let photoVC = segue.destination as! PhotoViewController
-            let cell = sender as! PhotoCollectionViewCell
-            photoVC.currentPhoto = cell.collectionImage.image
-        }
-    }
- 
-
-    // MARK: UICollectionViewDataSource
 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -99,6 +86,15 @@ class PhotosCollectionViewController: UIViewController, UICollectionViewDelegate
         return cell
     }
     
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "pickPhotoSegue" {
+            let photoVC = segue.destination as! PhotoViewController
+            let cell = sender as! PhotoCollectionViewCell
+            photoVC.currentPhoto = cell.collectionImage.image
+        }
+    }
 }
 
 extension PhotosCollectionViewController: UICollectionViewDelegateFlowLayout {

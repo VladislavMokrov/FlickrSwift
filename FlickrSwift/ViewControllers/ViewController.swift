@@ -19,17 +19,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.title = "Top 10 tags today"
         fetchData()
-
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "pickPhotoCollectionSegue" {
-            guard let indexPath = tableView.indexPathForSelectedRow else { return }
-            let tag = tagsForCollection[indexPath.item]
-            
-            let photosCVC = segue.destination as! PhotosCollectionViewController
-            photosCVC.currentTag = tag
-        }
     }
     
     func fetchData() {
@@ -92,5 +81,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    // MARK: - Navigation
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "pickPhotoCollectionSegue" {
+            guard let indexPath = tableView.indexPathForSelectedRow else { return }
+            let tag = tagsForCollection[indexPath.item]
+            
+            let photosCVC = segue.destination as! PhotosCollectionViewController
+            photosCVC.currentTag = tag
+        }
     }
 }

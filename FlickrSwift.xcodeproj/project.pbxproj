@@ -49,6 +49,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		724DAAC2262B82F900229467 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7292F82C262379FD00E4CE24 /* ViewController.swift */,
+				7292F83F2623935B00E4CE24 /* TableViewCell.swift */,
+				72B4B4072627208D00DB956E /* PhotosCollectionViewController.swift */,
+				72B4B40B262727A900DB956E /* PhotoCollectionViewCell.swift */,
+				72DDF8BE2628549600D531D8 /* PhotoViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		724DAAC3262B83DA00229467 /* NetworkDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				728CA0712624964C005CD81B /* TagsModel.swift */,
+				72DDF8C22628918400D531D8 /* PhotosModel.swift */,
+			);
+			path = NetworkDataModels;
+			sourceTree = "<group>";
+		};
+		724DAAC4262B841D00229467 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				7292F828262379FD00E4CE24 /* AppDelegate.swift */,
+				7292F82A262379FD00E4CE24 /* SceneDelegate.swift */,
+				7292F831262379FE00E4CE24 /* Assets.xcassets */,
+				7292F836262379FE00E4CE24 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		724DAAC5262B84E600229467 /* UIBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				7292F82E262379FD00E4CE24 /* Main.storyboard */,
+				7292F833262379FE00E4CE24 /* LaunchScreen.storyboard */,
+			);
+			path = UIBuilder;
+			sourceTree = "<group>";
+		};
 		7292F81C262379FD00E4CE24 = {
 			isa = PBXGroup;
 			children = (
@@ -68,19 +109,10 @@
 		7292F827262379FD00E4CE24 /* FlickrSwift */ = {
 			isa = PBXGroup;
 			children = (
-				7292F828262379FD00E4CE24 /* AppDelegate.swift */,
-				7292F82A262379FD00E4CE24 /* SceneDelegate.swift */,
-				7292F82C262379FD00E4CE24 /* ViewController.swift */,
-				7292F83F2623935B00E4CE24 /* TableViewCell.swift */,
-				728CA0712624964C005CD81B /* TagsModel.swift */,
-				72B4B4072627208D00DB956E /* PhotosCollectionViewController.swift */,
-				72B4B40B262727A900DB956E /* PhotoCollectionViewCell.swift */,
-				72DDF8C22628918400D531D8 /* PhotosModel.swift */,
-				72DDF8BE2628549600D531D8 /* PhotoViewController.swift */,
-				7292F82E262379FD00E4CE24 /* Main.storyboard */,
-				7292F831262379FE00E4CE24 /* Assets.xcassets */,
-				7292F833262379FE00E4CE24 /* LaunchScreen.storyboard */,
-				7292F836262379FE00E4CE24 /* Info.plist */,
+				724DAAC2262B82F900229467 /* ViewControllers */,
+				724DAAC3262B83DA00229467 /* NetworkDataModels */,
+				724DAAC4262B841D00229467 /* SupportFiles */,
+				724DAAC5262B84E600229467 /* UIBuilder */,
 			);
 			path = FlickrSwift;
 			sourceTree = "<group>";
@@ -312,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPMY542F34;
-				INFOPLIST_FILE = FlickrSwift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FlickrSwift/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,7 +364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PPMY542F34;
-				INFOPLIST_FILE = FlickrSwift/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FlickrSwift/SupportFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
